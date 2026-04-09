@@ -1,0 +1,129 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft Yahei", sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* 页面标题 */
+.page-title {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* 卡片容器：居中、阴影、圆角 */
+.card {
+    width: 380px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* 头像区域：圆形、100px尺寸 */
+.avatar-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+#avatar-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #409eff;
+}
+
+.upload-btn {
+    padding: 6px 16px;
+    background-color: #409eff;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.upload-btn:hover {
+    background-color: #66b1ff;
+    transform: translateY(-2px);
+}
+
+/* 信息项样式 */
+.info-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info-item label {
+    font-size: 14px;
+    color: #606266;
+    font-weight: 500;
+}
+
+/* 输入框样式 */
+#name-input, #bio-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dcdfe6;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+#name-input:focus, #bio-input:focus {
+    outline: none;
+    border-color: #409eff;
+}
+
+#bio-input {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* 显示文本样式 */
+.display-text {
+    font-size: 16px;
+    color: #303133;
+    padding: 8px 0;
+    word-break: break-all;
+}
+
+/* 保存按钮样式+hover效果 */
+.save-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #67c23a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.save-btn:hover {
+    background-color: #85ce61;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(103, 194, 58, 0.3);
+}
